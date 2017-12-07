@@ -16,12 +16,13 @@ def restart_ShadowCrack():
    curdir = os.getcwd()
 ##############################
 
-os.system("clear")
+os.system("clear") #Clears the screen.
 print ("\n\n")
-os.system("figlet ShadowCrack")
+os.system("figlet ShadowCrack") #Prints the title NOTE: This needs the package figlet!
 os.system("figlet -mini HASHING TOOL")
 print ("\nCopyright (C) 2017 Shadow Team\n")
 print ("\n\n")
+# Asks if encrypt or decrypt.
 encryptordecrypt = raw_input("\n(E) Encrypt a String        (C) Crack a hash\n\nInput: ")
 
 if encryptordecrypt == 'e' or encryptordecrypt == 'E':
