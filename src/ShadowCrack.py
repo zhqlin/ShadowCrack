@@ -16,6 +16,7 @@ def restart_ShadowCrack():
    curdir = os.getcwd()
 ##############################
 
+os.system("apt update && apt install figlet") #Installs Figlet.
 os.system("clear") #Clears the screen.
 print ("\n\n")
 os.system("figlet ShadowCrack") #Prints the title NOTE: This needs the package figlet!
