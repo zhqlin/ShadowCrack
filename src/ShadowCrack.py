@@ -63,6 +63,7 @@ if algorithm2 == "sha512" or algorithm2 == "SHA512" or algorithm2 == "Sha512" or
   import sha512
      
 else:
+    # If user enters an invalid password, this will show up.
 	print ("\n%s%s[%s!%s%s] %sWrong Input... Please check your input...%s" % (W, B, R, W, B, R, W))
 	time.sleep(2)
 	sys.exit()
