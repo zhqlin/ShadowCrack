@@ -16,15 +16,18 @@ def restart_ShadowCrack():
    curdir = os.getcwd()
 ##############################
 
-os.system("apt update && apt install figlet") #Installs Figlet.
-os.system("clear") #Clears the screen.
-print ("\n\n")
-os.system("figlet ShadowCrack") #Prints the title NOTE: This needs the package figlet!
-os.system("figlet -mini HASHING TOOL")
-print ("\nCopyright (C) 2017 Shadow Team\n")
+print("\n\n")
+print(" ____  _               _                ____                _")
+print("/ ___|| |__   __ _  __| | _____      __/ ___|_ __ __ _  ___| | __")
+print("\\___ \\| '_ \\ / _` |/ _` |/ _ \\ \\ /\\ / / |   | '__/ _` |/ __| |/ /")
+print(" ___) | | | | (_| | (_| | (_) \\ V  V /| |___| | | (_| | (__|   <")
+print("|____/|_| |_|\\__,_|\\__,_|\\___/ \\_/\\_/  \\____|_|  \\__,_|\\___|_|\\_\\")
+print ("")
+print("Hashing Tool and Hash Cracker")
+print ("\n\nCopyright (C) 2017 Shadow Team\n")
 print ("\n\n")
 # Asks if encrypt or decrypt.
-encryptordecrypt = raw_input("\n(E) Encrypt a String        (C) Crack a hash\n\nInput: ")
+encryptordecrypt = raw_input("\n[E] Encrypt a String\n[C] Crack a hash\n[Q] Quit\n\nInput: ")
 
 if encryptordecrypt == 'e' or encryptordecrypt == 'E':
   import ecrypt
@@ -38,6 +41,10 @@ elif encryptordecrypt == 'c' or encryptordecrypt == 'C':
     print ("%s  %s  %s                                            %s" % (RR, W, RR, W))
     print ("%s  %s" % (RR, W))
     algorithm2 = raw_input("%s    %s%s[%s#%s%s] Algorithm:%s " % (RR, W, B, R, W, B, O))
+
+elif encryptordecrypt == 'q' or encryptordecrypt == 'Q':
+    print ("Quitting...")
+    sys.exit(0)
   
 else:
 	print ("\n%s%s[%s!%s%s] %sWrong Input... Please check your input...%s" % (W, B, R, W, B, R, W))
