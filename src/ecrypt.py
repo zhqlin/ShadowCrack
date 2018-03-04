@@ -16,6 +16,7 @@ algorithm1 = raw_input('%s    %s%s[%s#%s%s] Algorithm:%s ' % (RR, W, B, R, W, B,
 if algorithm1.strip() in 'md5 MD5 Md5 mD5'.split():
     print '%s%s  %s' % (W, RR, W)
     hash = hashlib.md5(raw_input('%s    %s%s[%s#%s%s] String:%s ' % (RR, W, B, R, W, B, O))).hexdigest()
+    hash = hash.upper()
     print '%s%s  %s' % (W, RR, W)
     print '%s    %s%s[%s+%s%s] Hash: %s%s' % (RR, W, B, R, W, B, O, hash)
     print '%s' % W
@@ -23,6 +24,7 @@ if algorithm1.strip() in 'md5 MD5 Md5 mD5'.split():
 elif algorithm1.strip() in 'sha1 SHA1 Sha1 sHa1 sHA1'.split():
     print '%s%s  %s' % (W, RR, W)
     hash = hashlib.sha1(raw_input('%s    %s%s[%s#%s%s] String:%s ' % (RR, W, B, R, W, B, O))).hexdigest()
+    hash = hash.upper()
     print '%s%s  %s' % (W, RR, W)
     print '%s    %s%s[%s+%s%s] Hash: %s%s' % (RR, W, B, R, W, B, O, hash)
     print '%s' % W
@@ -30,6 +32,7 @@ elif algorithm1.strip() in 'sha1 SHA1 Sha1 sHa1 sHA1'.split():
 elif algorithm1.strip() in 'sha224 SHA224 Sha224 sHa224 sHA224'.split():
     print '%s%s  %s' % (W, RR, W)
     hash = hashlib.sha224(raw_input('%s    %s%s[%s#%s%s] String:%s ' % (RR, W, B, R, W, B, O))).hexdigest()
+    hash = hash.upper()
     print '%s%s  %s' % (W, RR, W)
     print '%s    %s%s[%s+%s%s] Hash: %s%s' % (RR, W, B, R, W, B, O, hash)
     print '%s' % W
@@ -37,6 +40,7 @@ elif algorithm1.strip() in 'sha224 SHA224 Sha224 sHa224 sHA224'.split():
 elif algorithm1.strip() in 'sha256 SHA256 Sha256 sHa256 sHA256'.split():
     print '%s%s  %s' % (W, RR, W)
     hash = hashlib.sha256(raw_input('%s    %s%s[%s#%s%s] String:%s ' % (RR, W, B, R, W, B, O))).hexdigest()
+    hash = hash.upper()
     print '%s%s  %s' % (W, RR, W)
     print '%s    %s%s[%s+%s%s] Hash: %s%s' % (RR, W, B, R, W, B, O, hash)
     print '%s' % W
@@ -44,6 +48,7 @@ elif algorithm1.strip() in 'sha256 SHA256 Sha256 sHa256 sHA256'.split():
 elif algorithm1.strip() in 'sha384 SHA384 Sha384 sHa384 sHA384'.split():
     print '%s%s  %s' % (W, RR, W)
     hash = hashlib.sha384(raw_input('%s    %s%s[%s#%s%s] String:%s ' % (RR, W, B, R, W, B, O))).hexdigest()
+    hash = hash.upper()
     print '%s%s  %s' % (W, RR, W)
     print '%s    %s%s[%s+%s%s] Hash: %s%s' % (RR, W, B, R, W, B, O, hash)
     print '%s' % W
@@ -51,6 +56,7 @@ elif algorithm1.strip() in 'sha384 SHA384 Sha384 sHa384 sHA384'.split():
 elif algorithm1.strip() in 'sha512 SHA512 Sha512 sHa512 sHA512'.split():
     print '%s%s  %s' % (W, RR, W)
     hash = hashlib.sha512(raw_input('%s    %s%s[%s#%s%s] String:%s ' % (RR, W, B, R, W, B, O))).hexdigest()
+    hash = hash.upper()
     print '%s%s  %s' % (W, RR, W)
     print '%s    %s%s[%s+%s%s] Hash: %s%s' % (RR, W, B, R, W, B, O, hash)
     print '%s' % W
